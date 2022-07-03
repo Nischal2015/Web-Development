@@ -1,0 +1,429 @@
+/* 
+SUCCESS: #0c8599;
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #f1f3f5;
+  color: #495057;
+  font-family: "Open Sans", sans-serif;
+  cursor: default;
+}
+
+/* SCROLLBAR */
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 2px grey;
+  border-radius: 100px;
+}
+
+/* Track on hover */
+::-webkit-scrollbar-track:hover {
+  box-shadow: inset 0 0 2px rgb(70, 70, 70);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #adb5bd;
+  border-radius: 100px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #868e96;
+}
+
+/* GENERAL CSS */
+.icons {
+  width: 24px;
+  height: 24px;
+}
+
+.icons-nav {
+  width: 20px;
+  height: 20px;
+  stroke-width: 2;
+}
+
+.right-chevron {
+  width: 20px;
+  height: 20px;
+}
+
+.text-heading:link,
+.text-heading:visited,
+.text-heading:hover,
+.text-heading:active {
+  color: #343a40;
+  text-decoration: none;
+  cursor: default;
+}
+
+.text-description {
+  font-size: 11px;
+}
+
+/* CSS FOR TITLE BAR */
+.titlebar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.titlebar-back {
+  stroke: #868e96;
+  height: 16px;
+  width: 16px;
+}
+
+.titlebar-icons {
+  height: 14px;
+  width: 14px;
+  stroke: #343a40;
+}
+
+.title-name {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 8px;
+}
+
+.title-name svg {
+  padding: 8px 12px;
+}
+
+.title-name svg:hover {
+  background-color: #e9ecef;
+}
+
+.titlebar-settings {
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.shortcut-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+  align-self: flex-start;
+}
+
+.shortcut-icons svg {
+  padding: 6px 12px;
+}
+
+.shortcut-icons svg:hover {
+  background-color: #e9ecef;
+}
+
+.shortcut-icons svg:last-child:hover {
+  background-color: rgb(255, 38, 35);
+  stroke: #fff;
+}
+
+/* CSS FOR MAIN GRID */
+.settings {
+  width: 97%;
+  margin: 16px auto;
+
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  column-gap: 44px;
+}
+
+/* CSS FOR ACCOUNT INFORMATION */
+.account {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 8px;
+  margin-bottom: 16px;
+}
+
+.account:hover,
+.info-desktop:hover,
+.microsoft-365:hover,
+.windows-update:hover {
+  background-color: #e9ecef;
+
+  border-radius: 4px;
+}
+
+.account-image {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+}
+
+.account-name {
+  color: #343a40;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.account-email {
+  color: #343a40;
+  font-size: 12px;
+}
+
+/* CSS FOR SEARCH */
+.search {
+  position: relative;
+  margin-bottom: 12px;
+}
+
+.search-box {
+  box-sizing: border-box;
+  width: 100%;
+
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+}
+
+.search-box,
+.search-box::-webkit-input-placeholder {
+  font-size: 14px;
+}
+
+.search-box:focus {
+  box-shadow: 0 4px 1px -1px rgb(173, 181, 189);
+  outline: none;
+}
+
+.search-icon {
+  display: inline-block;
+  position: absolute;
+
+  top: 25%;
+  right: 4%;
+
+  height: 16px;
+  width: 16px;
+
+  transform: scaleX(-1);
+}
+
+/* CSS FOR SIDEBAR NAVIGATION */
+.navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.nav {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+
+  padding: 8px 16px 8px 12px;
+}
+
+.nav:hover {
+  border-radius: 4px;
+  background-color: #e4e9ec;
+}
+
+.selector-color {
+  display: inline-block;
+  width: 4px;
+  height: 24px;
+  background-color: #0b7285;
+  border-radius: 4px;
+
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 0;
+  z-index: 1;
+}
+
+.nav--1 {
+  border-radius: 4px;
+  background-color: #e4e9ec;
+}
+
+.settings-right {
+  height: 98vh;
+  overflow-y: scroll;
+}
+
+/* SYSTEM HEADING */
+.system-heading {
+  font-weight: 600;
+  color: #343a40;
+  margin-bottom: 24px;
+}
+
+/* CSS FOR SYSTEM INFORMATION AND UPDATES*/
+.info,
+.info-desktop,
+.info-personal {
+  display: flex;
+}
+
+.info {
+  align-items: center;
+  justify-content: space-between;
+
+  margin-bottom: 32px;
+}
+
+.info-desktop {
+  align-items: center;
+  gap: 12px;
+}
+
+.info-personal {
+  flex-direction: column;
+}
+
+.user-name {
+  font-weight: 600;
+  font-size: 16px;
+  color: #343a40;
+}
+
+.info-title {
+  font-weight: 700;
+  font-size: 14px;
+  color: #343a40;
+}
+
+.info-detail {
+  font-size: 10px;
+}
+
+#benefits:hover {
+  text-decoration: underline;
+
+  color: #0b7285;
+}
+
+.rename {
+  font-size: 10px;
+  color: #0b7285;
+}
+
+.rename:hover {
+  text-decoration: underline;
+}
+
+.background {
+  width: 112px;
+  height: 63px;
+  border-radius: 8px;
+  border: 4px solid #000;
+}
+
+.info-microsoft-updates,
+.microsoft-365,
+.windows-update,
+.info-microsoft,
+.info-updates {
+  display: flex;
+}
+
+.info-microsoft-updates {
+  gap: 24px;
+}
+
+.microsoft-365,
+.windows-update {
+  align-items: center;
+  gap: 16px;
+  padding: 8px;
+  /* box-sizing: border-box; */
+}
+
+.info-microsoft,
+.info-updates {
+  flex-direction: column;
+  gap: 4px;
+}
+
+.logos {
+  height: 20px;
+  width: 20px;
+}
+
+/* CSS FOR SETTING ONLY */
+.settings-properties {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.el {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+
+  padding: 16px 20px;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+
+  background-color: #fff;
+}
+
+.el:hover {
+  background-color: #f8f9fa;
+}
+
+.settings-properties-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 32px;
+  width: 148px;
+  font-size: 14px;
+  box-shadow: 0 1px 2px 0 rgb(70, 70, 70);
+  border-radius: 4px;
+  cursor: default;
+}
+
+.btn--success {
+  background: #0c8599;
+}
+.btn--success > a:link,
+.btn--success > a:visited,
+.btn--success > a:hover,
+.btn--success > a:active {
+  color: #fff;
+}
+
+.properties-link:link,
+.properties-link:visited,
+.properties-link:hover,
+.properties-link:active {
+  text-decoration: none;
+  color: #495057;
+}
+
+/* UTILITY CLASS */
+.auto-margin-left {
+  margin-left: auto;
+}

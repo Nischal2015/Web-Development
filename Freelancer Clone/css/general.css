@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap");
+/* GENERAL CSS */
+:root {
+  --dark-grey: #212529;
+  --medium-grey: #343a40;
+  --light-grey: #495057;
+  --lightest-grey: #dee2e6;
+  --primary-blue: #4dabf7;
+  --bright-pink: #ff007f;
+  --light-pink: #ff69b4;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1;
+  font-weight: 400;
+  color: var(--medium-grey);
+  box-sizing: border-box;
+}
+
+.main-logo {
+  width: 13.6rem;
+}
+
+.icon {
+  width: 6.4rem;
+}
+
+.text-box {
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.grid {
+  display: grid;
+  column-gap: 2.4rem;
+  row-gap: 5rem;
+}
+
+.grid-small-row-gap {
+  row-gap: 2.4rem !important;
+}
+
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 1.6rem;
+  margin: 0 auto;
+}
+
+.btn:link,
+.btn:visited {
+  color: #fff !important;
+  display: inline-block;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.btn-big {
+  padding: 1.8rem 2.6rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn-medium {
+  padding: 1.4rem 2.4rem;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.btn-small {
+  padding: 1rem 1.6rem;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.btn-primary:link,
+.btn-primary:visited {
+  background: var(--bright-pink);
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+  background: var(--light-pink);
+}
+
+.btn-secondary:link,
+.btn-secondary:visited {
+  box-shadow: inset 0 0 0 1px #fff;
+}
+
+.heading-primary,
+.subheading {
+  font-size: 4.8rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.subheading {
+  color: var(--dark-grey);
+  margin-bottom: 9.6rem;
+  display: inline-block;
+}
+
+.heading-secondary {
+  font-size: 2.4rem;
+  color: var(--dark-grey);
+  line-height: 1.3;
+}
+
+.heading-tertiary {
+  font-size: 2.4rem;
+  font-weight: 400;
+  color: var(--dark-grey);
+  margin-bottom: 4.8rem;
+}
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--lightest-grey);
+}

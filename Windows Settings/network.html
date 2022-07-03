@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="description"
+      content="This is the System page of the settings in Windows 11."
+    />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Network & internet</title>
+  </head>
+  <body>
+    <div class="titlebar">
+      <div class="title-name">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="titlebar-back"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M10 19l-7-7m0 0l7-7m-7 7h18"
+          />
+        </svg>
+        <p class="titlebar-settings">Settings</p>
+      </div>
+
+      <div class="shortcut-icons">
+        <!-- MINIMIZE ICON -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="titlebar-icons"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M20 12H4"
+          />
+        </svg>
+
+        <!-- MAXIMIZE ICON -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="titlebar-icons"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z"
+          />
+        </svg>
+
+        <!-- CLOSE ICON -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="titlebar-icons"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M6 18L18 6M6 6l12 12"
+          />
+        </svg>
+      </div>
+    </div>
+    <main class="settings">
+      <div class="settings-left">
+        <div class="account">
+          <img
+            src="img/account_pic.jpg"
+            alt="Account picture"
+            class="account-image"
+          />
+          <div class="account-info">
+            <h5 class="account-name">Nischal Shakya</h5>
+            <p class="account-email">nischalshakya35@outlook.com</p>
+          </div>
+        </div>
+        <div class="search">
+          <input
+            type="text"
+            name="text"
+            id="text"
+            placeholder="Find a setting"
+            class="search-box"
+          />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            class="search-icon"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+            />
+          </svg>
+        </div>
+        <div class="navigation">
+          <!-- SYSTEM -->
+          <div class="nav nav--1">
+            <!-- <div class="selector-color"></div> -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"
+              />
+            </svg>
+            <a href="index.html" class="text-heading">System</a>
+          </div>
+
+          <!-- BLUETOOTH AND DEVICES -->
+          <div class="nav nav--2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
+              />
+            </svg>
+            <a href="bluetooth.html" class="text-heading"
+              >Bluetooth & devices</a
+            >
+          </div>
+
+          <!-- NETWORK AND INTERNET -->
+          <div class="nav nav--3">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M6 5c7.18 0 13 5.82 13 13M6 11a7 7 0 017 7m-6 0a1 1 0 11-2 0 1 1 0 012 0z"
+              />
+            </svg>
+            <a href="network.html" class="text-heading">Network & internet</a>
+          </div>
+
+          <!-- PERSONALIZATION -->
+          <div class="nav nav--4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"
+              />
+            </svg>
+            <a href="#" class="text-heading">Personalization</a>
+          </div>
+
+          <!-- APPS -->
+          <div class="nav nav--5">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M8 7v8a2 2 0 002 2h6M8 7V5a2 2 0 012-2h4.586a1 1 0 01.707.293l4.414 4.414a1 1 0 01.293.707V15a2 2 0 01-2 2h-2M8 7H6a2 2 0 00-2 2v10a2 2 0 002 2h8a2 2 0 002-2v-2"
+              />
+            </svg>
+            <a href="#" class="text-heading">Apps</a>
+          </div>
+
+          <!-- ACCOUNTS -->
+          <div class="nav nav--6">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <a href="#" class="text-heading">Accounts</a>
+          </div>
+
+          <!-- TIME AND LANGUGE -->
+          <div class="nav nav--7">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <a href="#" class="text-heading">Time & language</a>
+          </div>
+
+          <!-- GAMING -->
+          <div class="nav nav--8">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"
+              />
+            </svg>
+            <a href="#" class="text-heading">Gaming</a>
+          </div>
+
+          <!-- ACCESSIBILITY -->
+          <div class="nav nav--9">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
+              />
+            </svg>
+            <a href="#" class="text-heading">Accessibility</a>
+          </div>
+
+          <!-- PRIVACY AND SECURITY -->
+          <div class="nav nav--10">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
+              />
+            </svg>
+            <a href="#" class="text-heading">Privacy & security</a>
+          </div>
+
+          <!-- WINDOWS UPDATE -->
+          <div class="nav nav--11">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="icons-nav"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+              />
+            </svg>
+            <a href="#" class="text-heading">Windows Update</a>
+          </div>
+        </div>
+      </div>
+      <div class="settings-right">
+        <h2 class="system-heading">System</h2>
+        <div class="info">
+          <div class="info-desktop">
+            <img
+              src="img/wallpaper.jpg"
+              alt="Image of desktop background"
+              class="background"
+            />
+            <div class="info-personal">
+              <h3 class="user-name">Ethernet</h3>
+              <p class="info-detail">Connected</p>
+            </div>
+          </div>
+          <div class="info-microsoft-updates">
+            <div class="microsoft-365">
+              <img
+                src="img/microsoft-logo.svg"
+                alt="Microsoft logo"
+                class="logos"
+              />
+              <div class="info-microsoft">
+                <h4 class="info-title">Properties</h4>
+                <p class="info-detail" id="benefits">Public network</p>
+              </div>
+            </div>
+            <div class="windows-update">
+              <img
+                src="img/windows-update.svg"
+                alt="Windows update logo"
+                class="logos"
+              />
+              <div class="info-updates">
+                <h4 class="info-title">Data usage</h4>
+                <p class="info-detail">26.74 GB, last 30 days</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="settings-properties">
+          <!-- ETHERNET -->
+          <div class="el el--1">
+            <div class="settings-properties-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="icons"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <rect
+                  x="32"
+                  y="48"
+                  width="192"
+                  height="144"
+                  rx="16"
+                  transform="translate(256 240) rotate(180)"
+                  stroke-width="16"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  fill="none"
+                ></rect>
+                <line
+                  x1="160"
+                  y1="224"
+                  x2="96"
+                  y2="224"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+              </svg>
+              <div class="text">
+                <a href="#" class="text-heading">Ethernet</a>
+                <div class="text-description">
+                  Authetication, IP and DNS settings, metered network
+                </div>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="192"
+              height="192"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="right-chevron"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="96 48 176 128 96 208"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+
+          <!-- VPN -->
+          <div class="el el--2">
+            <div class="settings-properties-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="icons"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M218.88231,77.08831a72,72,0,0,1,0,101.82338"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M80,168H32a8,8,0,0,1-8-8V96a8,8,0,0,1,8-8H80l72-56V224Z"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <line
+                  x1="80"
+                  y1="88"
+                  x2="80"
+                  y2="168"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M190.59793,105.37258a32,32,0,0,1,0,45.25484"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <div class="text">
+                <a href="#" class="text-heading">VPN</a>
+                <div class="text-description">Add, connect, manage</div>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="192"
+              height="192"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="right-chevron"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="96 48 176 128 96 208"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+
+          <!-- PROXY -->
+          <div class="el el--3">
+            <div class="settings-properties-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="icons"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M56.20305,104A71.899,71.899,0,0,1,128.5484,32.002c39.58967.29432,71.25651,33.20133,71.25651,72.90185V112c0,35.81563,7.49325,56.59893,14.093,67.95814A7.999,7.999,0,0,1,207.01628,192H48.98365A7.99908,7.99908,0,0,1,42.103,179.95641c6.60328-11.35959,14.1-32.1426,14.1-67.95641Z"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+                <path
+                  d="M96,192v8a32,32,0,0,0,64,0v-8"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <div class="text">
+                <a href="#" class="text-heading">Proxy</a>
+                <div class="text-description">
+                  Proxy server for Wi-Fi and Ethernet connections
+                </div>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="192"
+              height="192"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="right-chevron"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="96 48 176 128 96 208"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+
+          <!-- DIAL-uP -->
+          <div class="el el--4">
+            <div class="settings-properties-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="icons"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <path
+                  d="M216.66238,152.64951A92.03175,92.03175,0,0,1,103.35039,39.338l.00255.00078A92.01376,92.01376,0,1,0,216.66147,152.64624Z"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <div class="text">
+                <a href="#" class="text-heading">Dial-up</a>
+                <div class="text-description">
+                  Set up a dial-up internet connection
+                </div>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="192"
+              height="192"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="right-chevron"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="96 48 176 128 96 208"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+
+          <!-- ADVANCED NETWORK SETTINGS -->
+          <div class="el el--5">
+            <div class="settings-properties-left">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="192"
+                height="192"
+                fill="#000000"
+                viewBox="0 0 256 256"
+                class="icons"
+              >
+                <rect width="256" height="256" fill="none"></rect>
+                <line
+                  x1="127.99219"
+                  y1="48.00288"
+                  x2="127.99219"
+                  y2="124.00288"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></line>
+                <path
+                  d="M176.00189,54.23268a88,88,0,1,1-96.00346-.00021"
+                  fill="none"
+                  stroke="#000000"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="16"
+                ></path>
+              </svg>
+              <div class="text">
+                <a href="#" class="text-heading">Advanced network settings</a>
+                <div class="text-description">
+                  View all network adapters, network reset
+                </div>
+              </div>
+            </div>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="192"
+              height="192"
+              fill="#000000"
+              viewBox="0 0 256 256"
+              class="right-chevron"
+            >
+              <rect width="256" height="256" fill="none"></rect>
+              <polyline
+                points="96 48 176 128 96 208"
+                fill="none"
+                stroke="#000000"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="16"
+              ></polyline>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

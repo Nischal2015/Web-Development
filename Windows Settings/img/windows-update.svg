@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.0" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 658 649" style="enable-background:new 0 0 658 649;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#00C853;stroke-width:40;stroke-miterlimit:10;}
+	.st1{fill:none;}
+	.st2{fill:#00C853;}
+</style>
+<polygon class="st0" points="630,57 630,592 630,616 29.9,535.7 29.9,521.7 31.9,119.4 32.5,102 630,26 "/>
+<g>
+	<g>
+		<path class="st1" d="M312,419c47.3,0,86.7-33.5,96-78H216C225.3,385.5,264.7,419,312,419z"/>
+		<path class="st1" d="M312,223c-47.3,0-86.7,33.5-96,78H408C398.7,256.5,359.3,223,312,223z"/>
+		<path class="st2" d="M312,419c-47.3,0-86.7-33.5-96-78h-41.6c9.7,67.3,67.6,119,137.6,119s127.9-51.7,137.6-119H408
+			C398.7,385.5,359.3,419,312,419z"/>
+		<path class="st2" d="M312,223c47.3,0,86.7,33.5,96,78h41.6C439.9,233.7,382,182,312,182s-127.9,51.7-137.6,119H216
+			C225.3,256.5,264.7,223,312,223z"/>
+	</g>
+	<rect x="172" y="341" class="st2" width="39" height="121"/>
+	<rect x="411" y="182" class="st2" width="39" height="121"/>
+	<rect x="370" y="223" transform="matrix(4.489215e-11 -1 1 4.489215e-11 106 673)" class="st2" width="39" height="121"/>
+	<rect x="213" y="300" transform="matrix(4.489215e-11 -1 1 4.489215e-11 -128 593)" class="st2" width="39" height="121"/>
+</g>
+</svg>

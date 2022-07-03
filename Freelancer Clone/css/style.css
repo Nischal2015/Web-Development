@@ -1,0 +1,264 @@
+/* UTILITY CSS */
+.margin-right-sm {
+  margin-right: 1.6rem !important;
+}
+
+.margin-left-xsm {
+  margin-left: 0.8rem !important;
+}
+
+.margin-top-sm {
+  margin-top: 1.6rem !important;
+}
+
+.margin-bottom-md {
+  margin-bottom: 2.6rem !important;
+}
+
+.margin-top-xlg {
+  margin-top: 7.4rem !important;
+}
+
+.padding-t-b {
+  padding: 9.6rem 0;
+}
+
+/* COMPONENT CSS */
+.nav-list {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-nav-list {
+  gap: 3.6rem;
+}
+
+.secondary-nav-list {
+  justify-content: flex-start;
+}
+
+.main-nav-list {
+  height: 6.4rem;
+}
+
+.main-nav-list li:nth-child(4) {
+  margin-left: auto;
+}
+
+.nav-link:link,
+.nav-link:visited {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.main-nav-link:link,
+.main-nav-link:visited {
+  color: var(--dark-grey);
+  font-size: 1.6rem;
+  font-weight: 400;
+  transition: all 0.2s;
+}
+
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: var(--primary-blue);
+}
+
+.secondary-navigation {
+  background-color: var(--medium-grey);
+}
+
+.secondary-nav-link:link,
+.secondary-nav-link:visited {
+  font-size: 1.4rem;
+  padding: 1.6rem;
+  color: #fff;
+}
+
+.secondary-nav-link:hover,
+.secondary-nav-link:active {
+  background: var(--light-grey);
+}
+
+.section-hero {
+  height: 96vh;
+  background-image: url("../img/jpg/hero.webp");
+  width: 100%;
+  background-size: cover;
+  position: relative;
+}
+
+.hero-text-box {
+  position: absolute;
+  max-width: 35%;
+  gap: 2.4rem;
+}
+
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.4;
+}
+
+.section-usedby {
+  padding: 3.2rem 0;
+}
+
+.as-used {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.as-used span {
+  font-size: 2rem;
+}
+
+.step-icon-heading {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+  margin-bottom: 3.2rem;
+}
+
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+.logos {
+  display: flex;
+  gap: 4.6rem;
+}
+
+.company-logo {
+  height: 3.6rem;
+}
+
+.gallery-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.gallery-item .image-container {
+  overflow: hidden;
+  margin-bottom: 12px;
+  position: relative;
+  cursor: pointer;
+  height: 100%;
+}
+
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.2s;
+}
+
+/* .gallery-item .image-container::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  height: 50px;
+  width: 120px;
+  border: 3px solid #fff;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  z-index: 99;
+  display: none;
+  transition: all 0.2s;
+} */
+
+.gallery-item .image-container:hover img {
+  transform-origin: center;
+  transform: scale(1.2);
+  display: block;
+}
+.gallery-item .image-container:hover .overlay {
+  height: 100%;
+  width: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--dark-grey);
+  opacity: 0.6;
+  z-index: 9;
+}
+
+figcaption {
+  font-size: 2.4rem;
+  font-weight: 600;
+  color: var(--dark-grey);
+}
+
+.view-more {
+  text-align: center;
+}
+
+/* CATEGORIES */
+.cat {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.cat-link:link,
+.cat-link:visited {
+  text-decoration: none;
+  color: var(--dark-grey);
+  font-size: 1.4rem;
+}
+
+.cat-link:hover,
+.cat-link:active {
+  text-decoration: underline;
+}
+
+.cat-icon {
+  height: 3.2rem;
+  width: 3.2rem;
+}
+
+.cat:last-child {
+  justify-items: center;
+}
+
+.cat:last-child .cat-icon {
+  height: 1.6rem;
+  width: 1.6rem;
+}
+
+/* FLASHY */
+.flashy {
+  position: relative;
+}
+
+.flashy-content {
+  display: flex;
+}
+
+.flashy-image {
+  width: 100%;
+}
+
+.flashy-text-box {
+  position: absolute;
+  max-width: 75%;
+  gap: 1.6rem;
+}
+
+.flashy-text-box-1 {
+  margin-left: 12.8rem;
+}
+
+.flashy-text-box-2 {
+  margin-left: 3.2rem;
+}
+
+.heading-helper {
+  font-size: 3.2rem;
+  margin-bottom: -1.2rem;
+}
